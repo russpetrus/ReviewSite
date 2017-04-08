@@ -1,0 +1,138 @@
+﻿body {
+   color:white;
+   background-color:#32373D;
+   padding: 100px 0 0 0;
+}
+
+/*extra styling to override boostrap css for the navbar*/
+
+#navbar{
+    background-color:#2F4356;
+    border-bottom: 1px solid #DF691A;
+    color:white;
+}
+
+a.home-brand{
+    font-family: 'Permanent Marker', cursive;
+    font-size:x-large;
+}
+
+/*styling to override and add to boostrap styling of the jumbotron*/
+#homepagejumbotron {
+    font-family: 'Permanent Marker', cursive;
+    color:#DF691A;
+     background-image: url('photos/Businessman-and-cogs.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:40px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+}
+
+/*div blocks to add styling and hold content*/
+
+div.product-thumbail {
+    height: 200px;
+    background-size:cover;
+    background-position:center;
+}
+
+
+
+div.transparent-blue{
+    background-color:rgba(47, 67, 86, .8);
+}
+
+div.whitebox{
+    background-color:rgba(255,255,255,.85);
+    padding:10px 20px 20px 20px;
+    margin-bottom:15px;
+    border-bottom: 4px solid #DF691A;    
+}
+
+div.orange-line{
+    border-top:3px solid #DF691A;
+    border-bottom:5px solid #DF691A;
+}
+
+div.gear-background {
+    background-image: url('photos/depositphotos_34253485-stock-illustration-gear-and-cogwheel-background.jpg');
+    background-position:left;
+    background-size:cover;
+}
+
+div.product-info-holder{
+    color:white;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:20px;
+    border-top:3px solid #DF691A;
+    border-bottom:5px solid #DF691A;
+}
+.product-image {
+  width:100%;
+}
+
+.product-description {  
+    
+}
+
+.btn{
+    background-color:#DF691A;
+    color:white;
+    border:none;
+    border-radius:0;
+
+}
+
+.btn:hover{
+    background-color:#2F4356;
+    color:#DF691A;
+    border: 1px solid #DF691A;
+}
+
+/*turns an element orange and adds the custom font from google*/
+.orange{
+    font-family: 'Permanent Marker', cursive;
+    color:#DF691A;
+}
+
+h2.less-margin{
+    margin-top:5px;
+}
+
+.review-label {  
+    display:inline;
+    margin-right:5px;
+    float:left;
+    font-weight: 700;
+}
+
+
+
+/*so that gears for score that aren't "met" are blue instead of orange*/
+div.scoreholder{
+    color:#2F4356;
+}
+
+/*to spin the gears for scores and turn them orange*/
+.fa-spin{
+    color: #DF691A;
+}
+.review-text{
+   margin-top:10px;
+   margin-bottom:10px;
+}
+
+#universal-footer{
+    color: #DF691A;
+}
+
+    
+
+
+

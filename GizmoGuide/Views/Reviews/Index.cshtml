@@ -1,0 +1,176 @@
+﻿@model IEnumerable<GizmoGuide.Models.Review>
+
+
+@{
+    ViewBag.Title = "Reviews";
+}
+
+<h2 class="orange">Reviews</h2>
+
+<p class="orange">
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <div class="product-thumbail" style="background-image: url('@item.ImageURL')";> 
+            </div>
+            <div class="whitebox">
+                <h3 class="less-margin orange">@item.ProductName</h3>
+                @if (item.Score == 1)
+                { <div class="scoreholder">
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                </div>}
+
+                @if (item.Score == 2)
+                { <div class="scoreholder">
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                </div>}
+
+                @if (item.Score == 3)
+                { <div class="scoreholder">
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-cog"></i>
+                </div>}
+
+                @if (item.Score == 4)
+                { <div class="scoreholder">
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog"></i>
+                </div>}
+
+                @if (item.Score == 5)
+                { <div class="scoreholder">
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                    <i class="fa fa-cog fa-spin"></i>
+                </div>}
+                <div>
+                    <p class="orange">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+@*<table class="table">
+        <tr>
+            <th class="orange">
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </th>
+            <th class="orange">
+                @Html.DisplayNameFor(model => model.ProductMake)
+            </th>
+            <th class="orange">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th class="orange">
+                @Html.DisplayNameFor(model => model.Score)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductMake)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+
+                <td>
+                    @if (item.Score == 1)
+                        { <div class="scoreholder">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+                        </div>}
+
+                    @if (item.Score == 2)
+                        { <div class="scoreholder">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+                        </div>}
+
+                    @if (item.Score == 3)
+                        { <div class="scoreholder">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-cog"></i>
+
+                        </div>}
+
+                    @if (item.Score == 4)
+                        { <div class="scoreholder">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog"></i>
+                        </div>}
+
+                    @if (item.Score == 5)
+                        { <div class="scoreholder">
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                            <i class="fa fa-cog fa-spin"></i>
+                        </div>}
+
+
+                    @Html.DisplayFor(modelItem => item.Score)
+                </td>
+                <td class="orange">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })
+                </td>
+            </tr>
+        }
+
+    </table>*@
+

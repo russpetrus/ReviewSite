@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Gear Guide";
+}
+
+<div class="jumbotron orange-line" id="homepagejumbotron">
+    
+        <h1>GEAR GUIDE</h1>
+        <p class="lead">Gear Guide is your one stop place for great reviews on the latest tech gear!.</p>    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 class="orange">Reviews</h2>
+        <p>
+            Our writers -- "the gear guy" -- puts the latest tech gear to the test and gives you professional, honest feedback!
+        </p>
+        <p><a class="btn" href="@Url.Action("Index","Reviews")">Reviews &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 class="orange">Categories</h2>
+        <p>From phones, to headphones, to TVs, we've got you covered! Check out our categories to see what tech we review!.</p>
+        <p><a class="btn" href="@Url.Action("Index","Categories")">Categories &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2 class="orange">The Gear Guy</h2>
+        <p>The gear guy personally tests the latest tech for a whole week before writing his reviews!</p>
+        <p><a class="btn" href="@Url.Action("About", "Home")">Learn more &raquo;</a></p>
+    </div>
+</div>
