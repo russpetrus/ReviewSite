@@ -11,6 +11,12 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+@*elimintated EF table view layout and placed all reviews within a "thumnail" that includes the image, the name of the product, the score, and the action links to view details, edit or delete. 
+More info is available in the detail view for each.
+Added one row but added  the column to the foreach loop. 
+Note: using inline styling to set the background image of the opening div of the column (class "product-thumbnail") is the only way i could find to add the image and maintain
+both row and column size without distorting the picture. This seems to be one of the rare instances where inline CSS might be acceptable. Though, I am open to learning a new way!*@
+
 <div class="row">
 
     @foreach (var item in Model)

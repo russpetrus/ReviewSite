@@ -6,8 +6,14 @@
     <title>@ViewBag.Title - The Gear Guide</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    @*using font-awesome from CDN for glyphicons*@
     <script src="https://use.fontawesome.com/44e96a0528.js"></script>
+
+    @*link to the website's custom style sheet*@
     <link href="~/Content/GGStyleSheet.css" rel="stylesheet" />
+
+    @*add google font for*@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 
 </head>
@@ -21,15 +27,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
+
+                @*using @Url.Action to accomplish using a glyphicon and text in the home page navbar-brand*@
+
                 <a href="@Url.Action("Index", "Home")" class="navbar-brand home-brand">
                     <i class="fa fa-cogs"></i>
                     <span>
                         <strong>Gear Guide</strong>
                     </span>
                 </a>
-                      
-               
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">

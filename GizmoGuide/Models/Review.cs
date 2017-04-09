@@ -35,6 +35,8 @@ namespace GizmoGuide.Models
         [DisplayName("Review")]
         public string ReviewContent { get; set; }
 
+
+        //Setting a range for the score limits the user entry between 1 and 5 - keeping scoring consistent and allows for use of glyphicons in views//
         [Range(1, 5)]
         public int Score { get; set; }
 

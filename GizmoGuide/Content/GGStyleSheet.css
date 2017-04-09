@@ -4,7 +4,7 @@
    padding: 100px 0 0 0;
 }
 
-/*extra styling to override boostrap css for the navbar*/
+/*extra styling to override boostrap css for the navbar and footer*/
 
 #navbar{
     background-color:#2F4356;
@@ -16,6 +16,11 @@ a.home-brand{
     font-family: 'Permanent Marker', cursive;
     font-size:x-large;
 }
+
+#universal-footer{
+    color: #DF691A;
+}
+
 
 /*styling to override and add to boostrap styling of the jumbotron*/
 #homepagejumbotron {
@@ -48,7 +53,7 @@ div.transparent-blue{
 }
 
 div.whitebox{
-    background-color:rgba(255,255,255,.85);
+    background-color:rgb(255,255,255);
     padding:10px 20px 20px 20px;
     margin-bottom:15px;
     border-bottom: 4px solid #DF691A;    
@@ -77,9 +82,7 @@ div.product-info-holder{
   width:100%;
 }
 
-.product-description {  
-    
-}
+/*over-ride bootstrap button CSS*/
 
 .btn{
     background-color:#DF691A;
@@ -95,7 +98,7 @@ div.product-info-holder{
     border: 1px solid #DF691A;
 }
 
-/*turns an element orange and adds the custom font from google*/
+/*styles for text and headlines*/
 .orange{
     font-family: 'Permanent Marker', cursive;
     color:#DF691A;
@@ -112,25 +115,23 @@ h2.less-margin{
     font-weight: 700;
 }
 
-
-
-/*so that gears for score that aren't "met" are blue instead of orange*/
-div.scoreholder{
-    color:#2F4356;
-}
-
-/*to spin the gears for scores and turn them orange*/
-.fa-spin{
-    color: #DF691A;
-}
 .review-text{
    margin-top:10px;
    margin-bottom:10px;
 }
 
-#universal-footer{
+
+
+/*Styles for the score gears*/
+div.scoreholder{
+    color:#2F4356;
+}
+
+.fa-spin{
     color: #DF691A;
 }
+
+
 
     
 

@@ -181,6 +181,10 @@
     <Compile Include="Migrations\201704082139552_UpdatingDataBaseBeforePushToGitHub.Designer.cs">
       <DependentUpon>201704082139552_UpdatingDataBaseBeforePushToGitHub.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704091124368_AddedComments.cs" />
+    <Compile Include="Migrations\201704091124368_AddedComments.Designer.cs">
+      <DependentUpon>201704091124368_AddedComments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\GizmoGuideContext.cs" />
@@ -322,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704082139552_UpdatingDataBaseBeforePushToGitHub.resx">
       <DependentUpon>201704082139552_UpdatingDataBaseBeforePushToGitHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704091124368_AddedComments.resx">
+      <DependentUpon>201704091124368_AddedComments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

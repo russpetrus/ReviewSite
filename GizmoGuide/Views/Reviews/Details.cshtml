@@ -4,6 +4,8 @@
     ViewBag.Title = Model.ProductName;
 }
 
+@*I eliminated the EF table layout for the review and instead placed all of the manufactuer's information on the left hand side (or top on smaller views) of the page and put the review conent in another column using bootstrap rows and columns.*@ 
+
 <div class="row">
     <div class="col-md-4">
         <div class="gear-background">
@@ -12,9 +14,9 @@
            
                 <div class="product-info-holder">
                     <h2 class="product-name"> @Model.ProductName</h2>
-                    <p class="review-label">Manufacturer</p>
+                    <p class="review-label">@Html.DisplayNameFor(model=> model.ProductMake)</p>
                     <p class="review-info">@Model.ProductMake</p>
-                    <p class="review-label">Model Number</p>
+                    <p class="review-label">@Html.DisplayNameFor(model=> model.ModelNumber)</p>
                     <p class="review-info">@Model.ModelNumber</p>
                     <p class="product-description">@Model.ProductDescription</p>
                 </div>
@@ -25,9 +27,11 @@
     <div class="col-md-8">
         <h2 class="orange">The Gear Guy Review</h2>
         <p>@Model.ReviewDate</p>
-        <p class="review-label orange">Score</p>
+        <p class="review-label orange">@Html.DisplayNameFor(model=> model.Score)</p>
         
-        @if (Model.Score == 1)
+       @*This piece of C# code determines how many orange spinning gears and how many blue static gears to display based on the score.*@
+        
+         @if (Model.Score == 1)
         { <div class="scoreholder">
             <i class="fa fa-cog fa-spin"></i>
               <i class="fa fa-cog"></i>
